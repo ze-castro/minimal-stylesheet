@@ -143,7 +143,8 @@ button,
 input,
 textarea,
 select,
-dialog {
+dialog,
+progress {
   outline: none;
   border: none;
 }
@@ -301,6 +302,26 @@ dialog {
   box-shadow: 0 0.5rem 1rem var(--shadow-2);
   margin: 2rem;
 }
+
+/* DETAILS */
+details {
+  height: auto;
+  padding: 1rem;
+}
+details summary::marker {
+  content: '';
+}
+details summary {
+  cursor: pointer;
+}
+
+/* PROGRESS */
+progress {
+  background-color: var(--gray-1);
+  color: var(--blue);
+}
+progress::-moz-progress-bar { background: var(--blue); }
+progress::-webkit-progress-value { background: var(--blue); }
 
 /* COOKIES */
 #cookies {
