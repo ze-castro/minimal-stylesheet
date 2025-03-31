@@ -142,7 +142,8 @@ a {
 button,
 input,
 textarea,
-select {
+select,
+dialog {
   outline: none;
   border: none;
 }
@@ -294,13 +295,11 @@ dialog {
   width: 100%;
   max-width: 600px;
   height: auto;
-  padding: 2rem;
+  padding: 1rem;
   background-color: var(--white);
-  border-radius: var(--radius-2);
-  box-shadow: 0 0.3rem 0.8rem var(--shadow-2);
-}
-dialog::backdrop {
-  background-color: var(--transparent-background-5);
+  border-radius: var(--radius-3);
+  box-shadow: 0 0.5rem 1rem var(--shadow-2);
+  margin: 2rem;
 }
 
 /* COOKIES */
