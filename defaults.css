@@ -34,6 +34,12 @@ TODO:
 
   /* TRANSPARENT COLORS */
   --transparent-blue: #0071e34b;
+  --transparent-green: #288d52ab;
+  --transparent-red: #be3939ab;
+  --transparent-yellow: #f5c518ab;
+  --transparent-orange: #e46248ab;
+  --transparent-purple: #ac92ecab;
+  --transparent-pink: #f7a8b8ab;
   --transparent: transparent;
 
   /* TRANSPARENT BACKGROUND */
@@ -54,10 +60,15 @@ TODO:
   --font-3: 'Montserrat', sans-serif;
 
   /* FONT SIZES */
-  --title: 4rem;
-  --subtitle: 1.2rem;
-  --paragraph: 1rem;
-  --microcopy: 0.85rem;
+  --title-1: 2rem;
+  --title-2: 2.5rem;
+  --title-3: 3rem;
+  --subtitle-1: 1.2rem;
+  --subtitle-2: 1.4rem;
+  --subtitle-3: 1.6rem;
+  --paragraph-1: 0.8rem;
+  --paragraph-2: 0.9rem;
+  --paragraph-3: 1rem;
 
   /* FONT WEIGHTS */
   --thin: 100;
@@ -105,6 +116,8 @@ body {
 body * {
   font-family: var(--font-1);
   color: var(--black);
+  line-height: var(--line-height);
+  letter-spacing: var(--letter-spacing);
 }
 
 main {
@@ -113,45 +126,33 @@ main {
 }
 
 /* HEADINGS */
-h1,
-h2,
-h3,
-h4,
-h5,
-h6 {
-  font-family: var(--font-1);
-  color: var(--black);
-  line-height: var(--line-height);
-  letter-spacing: var(--letter-spacing);
-}
-
 h1 {
-  font-size: var(--title);
+  font-size: var(--title-3);
   font-weight: var(--heavy);
 }
 
 h2 {
-  font-size: calc(var(--title) * 0.7);
+  font-size: var(--title-2);
   font-weight: var(--bold);
 }
 
 h3 {
-  font-size: calc(var(--title) * 0.5);
+  font-size: var(--title-1);
   font-weight: var(--semi-bold);
 }
 
 h4 {
-  font-size: calc(var(--title) * 0.4);
+  font-size: var(--subtitle-3);
   font-weight: var(--semi-bold);
 }
 
 h5 {
-  font-size: calc(var(--title) * 0.3);
+  font-size: var(--subtitle-2);
   font-weight: var(--regular);
 }
 
 h6 {
-  font-size: calc(var(--title) * 0.25);
+  font-size: var(--subtitle-1);
   font-weight: var(--regular);
 }
 
@@ -179,19 +180,26 @@ button {
   transition: var(--steady);
   box-shadow: 0 0.3rem 0.8rem var(--shadow-2);
 }
-button:hover {
+button:hover:not(:disabled) {
   transform: scale(1.03);
   box-shadow: 0 0.5rem 1.1rem var(--shadow-2);
 }
-button:active {
+button:active:not(:disabled) {
   transform: scale(1);
   box-shadow: 0 0.1rem 0.5rem var(--shadow-2);
 }
+button:disabled {
+  background-color: var(--gray-2);
+  color: var(--gray-4);
+  box-shadow: none;
+  cursor: not-allowed;
+}
 
+/* LINKS */
 a,
 a:visited {
   text-decoration: none;
-  color: #06c;
+  color: var(--blue);
 }
 
 a:hover {
