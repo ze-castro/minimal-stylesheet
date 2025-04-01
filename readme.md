@@ -21,14 +21,33 @@ To use the Minimal Stylesheet in your project, simply include the following `<li
 />
 ```
 
-## TODOS
+## Todos
 
-- Update cookies
 - Add footer
 - Add navbar
 - Add animations
 - Add responsiveness
 
+## Usage
+
+For components, you can use the following HTML structure:
+
+### Loading
+
+```html
+<div class="loading">
+  <div></div>
+</div>
+```
+
+### Cookies
+
+```html
+<div class="cookies">
+  <p>We use cookies to improve your experience.</p>
+  <button>Accept</button>
+</div>
+```
 
 ## Customization
 
