@@ -9,7 +9,7 @@ document.addEventListener('DOMContentLoaded', function () {
       </div>`;
 
     // Place the cookie consent element at the top of the body
-    document.body.insertAdjacentHTML('afterbegin', cookiesElement);
+    document.body.insertAdjacentHTML('afterend', cookiesElement);
 
     // Wait for click on the button to close the cookie consent
     const cookiesButton = document.querySelector('.cookies button');
