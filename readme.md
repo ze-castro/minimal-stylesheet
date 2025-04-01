@@ -12,20 +12,20 @@ A lightweight and modern CSS stylesheet designed to provide a simple, elegant, a
 
 ## Getting Started
 
-To use the Minimal Stylesheet in your project, simply include the following `<link>` tag in the `<head>` section of your HTML file:
+To use the Minimal Stylesheet in your project, simply include the following `<link>` and `<script>` tag in the `<head>` section of your HTML file:
 
 ```html
 <link
   rel="stylesheet"
   href="https://cdn.jsdelivr.net/gh/ZeCastroIPCA/minimal-stylesheet@main/defaults.css"
 />
+<script src="https://cdn.jsdelivr.net/gh/ZeCastroIPCA/minimal-stylesheet@main/helper.js"></script>
 ```
 
 ## Todos
 
 - Add footer
 - Add navbar
-- Add animations
 - Add responsiveness
 
 ## Usage

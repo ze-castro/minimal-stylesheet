@@ -398,23 +398,44 @@ progress::-webkit-progress-value {
 /* COOKIES */
 .cookies {
   position: fixed;
-  bottom: 0;
-  left: 0;
-  width: 100%;
+  bottom: 1.5rem;
+  left: 50%;
+  transform: translateX(-50%);
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  width: calc(100% - 2rem);
+  max-width: 600px;
+  height: auto;
   padding: 1rem;
   background-color: var(--white);
-  box-shadow: 0 -0.3rem 0.8rem var(--shadow-2);
+  border-radius: var(--radius-3);
+  box-shadow: 0 0.5rem 1rem var(--shadow-2);
+  animation: cookiesOpen var(--steady) forwards;
   z-index: 9999;
 }
 .cookies p {
   font-size: var(--paragraph-2);
   font-weight: var(--regular);
 }
-.cookies button {
-  background-color: var(--blue);
-  color: var(--white);
-  padding: 0.5rem 1rem;
-  border-radius: var(--radius-2);
+.cookies.close {
+  animation: cookiesClose var(--steady) forwards;
+}
+@keyframes cookiesOpen {
+  from {
+    transform: translateY(5rem) translateX(-50%);
+  }
+  to {
+    transform: translateY(0) translateX(-50%);
+  }
+}
+@keyframes cookiesClose {
+  from {
+    transform: translateY(0) translateX(-50%);
+  }
+  to {
+    transform: translateY(5rem) translateX(-50%);
+  }
 }
 
 /* LOADING */
