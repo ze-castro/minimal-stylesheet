@@ -17,11 +17,11 @@ To use the Minimal Stylesheet in your project, simply include the following `<li
 ```html
 <link
   rel="stylesheet"
-  href="https://cdn.jsdelivr.net/gh/ZeCastroIPCA/minimal-stylesheet@main/defaults.css"
+  href="https://cdn.jsdelivr.net/gh/ze-castro/minimal-stylesheet@main/defaults.css"
 />
 <script
   defer
-  src="https://cdn.jsdelivr.net/gh/ZeCastroIPCA/minimal-stylesheet@main/helper.js"
+  src="https://cdn.jsdelivr.net/gh/ze-castro/minimal-stylesheet@main/helper.js"
 ></script>
 ```
 
