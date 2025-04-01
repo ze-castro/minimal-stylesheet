@@ -136,7 +136,7 @@
 body {
   width: 100%;
   height: 100%;
-  font-size: var(--paragraph);
+  font-size: var(--paragraph-3);
   font-weight: var(--regular);
   scroll-behavior: smooth;
   line-height: var(--line-height);
@@ -218,7 +218,7 @@ h6 {
 
 /* PARAGRAPHS */
 p {
-  font-size: var(--paragraph);
+  font-size: var(--paragraph-1);
   line-height: var(--line-height);
 }
 
