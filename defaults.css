@@ -267,7 +267,7 @@ ul {
 }
 
 /* INPUTS */
-input:not([type='checkbox'], [type='radio']) {
+input:not([type='checkbox'], [type='radio'], :hover) {
   box-shadow: 0 0 0 1px var(--gray-2);
 }
 
