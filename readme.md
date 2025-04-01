@@ -17,9 +17,9 @@ To use the Minimal Stylesheet in your project, simply include the following `<li
 ```html
 <link
   rel="stylesheet"
-  href="https://cdn.jsdelivr.net/gh/ZeCastroIPCA/minimal-stylesheet@main/defaults.css"
+  href="https://cdn.jsdelivr.net/gh/ZeCastroIPCA/minimal-stylesheet@main/defaults.css?v=1.0"
 />
-<script src="https://cdn.jsdelivr.net/gh/ZeCastroIPCA/minimal-stylesheet@main/helper.js"></script>
+<script defer src="https://cdn.jsdelivr.net/gh/ZeCastroIPCA/minimal-stylesheet@main/helper.js"></script>
 ```
 
 ## Todos
