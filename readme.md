@@ -22,12 +22,6 @@ To use the Minimal Stylesheet in your project, simply include the following `<li
 <script defer src="https://cdn.jsdelivr.net/gh/ZeCastroIPCA/minimal-stylesheet@main/helper.js"></script>
 ```
 
-## Todos
-
-- Add footer
-- Add navbar
-- Add responsiveness
-
 ## Usage
 
 For components, you can use the following HTML structure:
