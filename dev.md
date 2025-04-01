@@ -5,3 +5,8 @@ If you are experiencing issues with the stylesheet not updating, it may be due t
 ```text
 https://purge.jsdelivr.net/gh/ZeCastroIPCA/minimal-stylesheet@main/defaults.css
 ```
+
+```text
+https://purge.jsdelivr.net/gh/ZeCastroIPCA/minimal-stylesheet@main/helper.js
+```
+
