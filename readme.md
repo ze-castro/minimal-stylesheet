@@ -176,7 +176,7 @@ Override the variables in your own stylesheet:
 
 ```css
 :root {
-  --primary-color: #ff5733;
+  --red: #ff5733;
   --font-1: 'Arial', sans-serif;
 }
 ```
