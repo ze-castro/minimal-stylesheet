@@ -15,14 +15,8 @@ A lightweight and modern CSS stylesheet designed to provide a simple, elegant, a
 To use the Minimal Stylesheet in your project, simply include the following `<link>` and `<script>` tag in the `<head>` section of your HTML file:
 
 ```html
-<link
-  rel="stylesheet"
-  href="https://cdn.jsdelivr.net/gh/ze-castro/minimal-stylesheet@main/defaults.css"
-/>
-<script
-  defer
-  src="https://cdn.jsdelivr.net/gh/ze-castro/minimal-stylesheet@main/helper.js"
-></script>
+<link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/ze-castro/minimal-stylesheet@main/defaults.css" />
+<script defer src="https://cdn.jsdelivr.net/gh/ze-castro/minimal-stylesheet@main/helper.js"></script>
 ```
 
 ## Usage
@@ -178,6 +172,20 @@ Override the variables in your own stylesheet:
 :root {
   --red: #ff5733;
   --font-1: 'Arial', sans-serif;
+}
+```
+
+## ⚠️ Warning
+
+### Video and Image Interaction
+
+Videos and images have `user-select: none` and `pointer-events: none` by default. This is to prevent users from selecting or interacting with them. If you want to enable interaction, you can override this in your CSS:
+
+```css
+img,
+video {
+  user-select: unset;
+  pointer-events: unset;
 }
 ```
 
