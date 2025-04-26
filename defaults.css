@@ -447,7 +447,7 @@ progress::-webkit-progress-value {
   display: flex;
   justify-content: center;
   align-items: center;
-  background-color: var(--transparent-background-5);
+  background-color: var(--transparent-background-4);
   z-index: 9999;
 }
 @keyframes loading {
@@ -462,7 +462,7 @@ progress::-webkit-progress-value {
   width: 2rem;
   height: 2rem;
   border-radius: 50%;
-  border: 0.2rem solid var(--gray-2);
-  border-top: 0.2rem solid var(--blue);
+  border: 0.2rem solid var(--transparent-gray-2);
+  border-top: 0.2rem solid var(--black);
   animation: loading var(--loading) linear infinite;
 }
