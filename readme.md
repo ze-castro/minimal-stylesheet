@@ -4,11 +4,13 @@ A lightweight and modern CSS stylesheet designed to provide a simple, elegant, a
 
 ## Features
 
-- Clean and minimal design
-- Responsive layout
-- Predefined color variables
-- Styled buttons, inputs, and typography
-- Smooth transitions and animations
+- Clean and minimal design;
+- Responsive layout;
+- Predefined color variables;
+- Styled buttons, inputs, and typography;
+- Animated loading images;
+- Cookie consent banner;
+- Loading animation.
 
 ## Getting Started
 
