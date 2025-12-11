@@ -30,7 +30,8 @@ For variables, you can use the following CSS variables:
 ```css
 /* MUTED COLORS */
 --white: #fdfdfd;
---gray-1: #f5f5f5;
+--whitesmoke: #f5f5f5;
+--gray-1: #ececec;
 --gray-2: #dedede;
 --gray-3: #b4b4b4;
 --gray-4: #676767;
