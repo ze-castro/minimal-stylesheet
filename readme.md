@@ -36,15 +36,24 @@ For variables, you can use the following CSS variables:
 --black: #1d1d1f;
 
 /* COLORS */
---green: #288d52;
 --light-green: #3dbf6d;
+--green: #288d52;
+--dark-green: #095328;
+--light-red: #f14e4e;
 --red: #be3939;
+--dark-red: #8f1818;
+--light-yellow: #fcd858;
 --yellow: #f5c518;
---orange: #e46248;
---blue: #0071e3;
+--yellow: #c59b02;
+--light-orange: #f8a35d;
+--orange: #f77a15;
+--dark-orange: #cc6007;
 --light-blue: #00a0e3;
+--blue: #0071e3;
+--dark-blue: #0b4279;
 --purple: #ac92ec;
 --pink: #f7a8b8;
+--brown: #5c2900;
 
 /* TRANSPARENT COLORS */
 --transparent-blue: #0071e34b;
@@ -91,8 +100,8 @@ For variables, you can use the following CSS variables:
 --font-1: 'Poppins', sans-serif;
 --font-2: 'Roboto', sans-serif;
 --font-3: 'Montserrat', sans-serif;
---font-4: 'Playwrite BR', cursive;
---font-5: 'Courier New', monospace;
+--font-hand: 'Playwrite BR', cursive;
+--font-code: 'Courier New', monospace;
 
 /* FONT SIZES */
 --title-1: 2rem;
@@ -112,14 +121,16 @@ For variables, you can use the following CSS variables:
 --regular: 400;
 --semi-bold: 500;
 --bold: 600;
---heavy: 700;
---extra-bold: 800;
+--extra-bold: 700;
+--heavy: 800;
+--extra-heavy: 900;
 ```
 
 ### 🔲 Border Radius
 
 ```css
 /* BORDER RADIUS */
+--radius-circle: 9999rem;
 --radius-1: 10rem;
 --radius-2: 2rem;
 --radius-3: 1rem;
@@ -137,7 +148,7 @@ For variables, you can use the following CSS variables:
 --fast: 0.1s;
 ```
 
-### 📏 Text Spacing
+### 📏 Default Text Spacing
 
 ```css
 /* TEXT SPACING */
@@ -153,20 +164,6 @@ Override the variables in your own stylesheet:
 :root {
   --red: #ff5733;
   --font-1: 'Arial', sans-serif;
-}
-```
-
-## ⚠️ Warning
-
-### Video and Image Interaction
-
-Videos and images have `user-select: none` and `pointer-events: none` by default. This is to prevent users from selecting or interacting with them. If you want to enable interaction, you can override this in your CSS:
-
-```css
-img,
-video {
-  user-select: unset;
-  pointer-events: unset;
 }
 ```
 

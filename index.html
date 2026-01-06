@@ -4,34 +4,73 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <link rel="stylesheet" href="/defaults.css" />
-    <script src="/helper.js"></script>
     <!-- <link
       rel="stylesheet"
       href="https://cdn.jsdelivr.net/gh/ze-castro/minimal-stylesheet@main/defaults.css"
-    />
-    <script defer src="https://cdn.jsdelivr.net/gh/ze-castro/minimal-stylesheet@main/helper.js"></script> -->
+    />-->
     <title>Defaults</title>
+    <style>
+      .container {
+        display: flex;
+        flex-direction: column;
+        width: fit-content;
+        height: fit-content;
+        padding: 1rem;
+        border: 1px solid black;
+      }
+      .container-title {
+        margin-bottom: 1rem
+      }
+    </style>
   </head>
-  <body>
-    <h1>This is an H1</h1>
-    <h2>This is an H2</h2>
-    <h3>This is an H3</h3>
-    <h4>This is an H4</h4>
-    <h5>This is an H5</h5>
-    <h6>This is an H6</h6>
-    <p>
-      This is a paragraph. Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed do eiusmod
-      tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud
-      exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in
-      reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur.
-    </p>
+  <body style="padding: 1rem; display: flex; flex-wrap: wrap; gap: 1rem; row-gap: 1rem">
+    <div class="container">
+      <p class="container-title">Titles (H's)</p>
+      <h1>This is an H1</h1>
+      <h2>This is an H2</h2>
+      <h3>This is an H3</h3>
+      <h4>This is an H4</h4>
+      <h5>This is an H5</h5>
+      <h6>This is an H6</h6>
+    </div>
 
-    <img src="https://picsum.photos/400/300" width="400" height="300" alt="Image">
+    <div class="container" style="width: 300px">
+      <p class="container-title">Paragraph</p>
+      <p style="font-size: var(--paragraph-3); margin-bottom: 1rem">
+        This is a paragraph. Lorem ipsum dolor sit amet, consectetur adipiscing elit.
+      </p>
+      <p style="font-size: var(--paragraph-2); margin-bottom: 1rem">
+        This is a paragraph. Lorem ipsum dolor sit amet, consectetur adipiscing elit.
+      </p>
+      <p>This is a paragraph. Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
+    </div>
 
-    <input type="text" placeholder="This is a text input" />
-    <textarea name="" id="" placeholder="This is a textarea"></textarea>
-    <progress value="50" max="100"></progress>
-    <button>This is a button</button>
-    <video src="https://www.w3schools.com/html/mov_bbb.mp4" controls autoplay muted loop></video>
+    <div class="container">
+      <p class="container-title">Input / Textarea / Button</p>
+      <input style="margin-bottom: 1rem" type="text" placeholder="This is a text input" />
+      <textarea
+        style="margin-bottom: 1rem"
+        name=""
+        id=""
+        placeholder="This is a textarea"
+      ></textarea>
+      <button>This is a button</button>
+    </div>
+
+    <div class="container">
+      <p class="container-title">Image</p>
+      <img
+        style="margin-bottom: 1rem"
+        src="https://picsum.photos/400/300"
+        width="400"
+        height="300"
+        alt="Image"
+      />
+    </div>
+
+    <div class="container">
+      <p style="margin-bottom: 1rem">Video</p>
+      <video src="https://www.w3schools.com/html/mov_bbb.mp4" controls autoplay muted loop></video>
+    </div>
   </body>
 </html>

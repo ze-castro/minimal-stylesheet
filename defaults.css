@@ -91,10 +91,12 @@
   --regular: 400;
   --semi-bold: 500;
   --bold: 600;
-  --heavy: 700;
-  --extra-bold: 800;
+  --extra-bold: 700;
+  --heavy: 800;
+  --extra-heavy: 900;
 
   /* BORDER RADIUS */
+  --radius-circle: 9999rem;
   --radius-1: 10rem;
   --radius-2: 2rem;
   --radius-3: 1rem;
@@ -172,10 +174,10 @@ body {
   outline: none;
   border: none;
 }
-:where(input, textarea, select) {
-  font-size: var(--paragraph-3);
+:where(input, textarea, select, button) {
+  font-size: var(--paragraph-1);
   border-radius: var(--radius-5);
-  padding: 0.5rem 0.7rem;
+  padding: 0.5rem 1rem;
 }
 :where(input, textarea, select, button) {
   font-family: inherit;
@@ -196,7 +198,7 @@ main {
 /* HEADINGS */
 h1 {
   font-size: var(--title-3);
-  font-weight: var(--heavy);
+  font-weight: var(--extra-bold);
 }
 h2 {
   font-size: var(--title-2);
@@ -204,7 +206,7 @@ h2 {
 }
 h3 {
   font-size: var(--title-1);
-  font-weight: var(--semi-bold);
+  font-weight: var(--bold);
 }
 h4 {
   font-size: var(--subtitle-3);
@@ -212,16 +214,16 @@ h4 {
 }
 h5 {
   font-size: var(--subtitle-2);
-  font-weight: var(--regular);
+  font-weight: var(--semi-bold);
 }
 h6 {
   font-size: var(--subtitle-1);
-  font-weight: var(--regular);
+  font-weight: var(--semi-bold);
 }
 
 /* PARAGRAPHS */
 p {
-  font-size: var(--paragraph-3);
+  font-size: var(--paragraph-1);
   font-weight: var(--light);
   line-height: var(--line-height);
 }
@@ -234,7 +236,7 @@ span {
 
 /* BUTTONS */
 button {
-  border-radius: var(--radius-1);
+  border-radius: var(--radius-circle);
   padding: 0.5rem 1rem;
   color: var(--white);
   background-color: var(--black);
@@ -315,7 +317,6 @@ video {
 img,
 video {
   user-select: none;
-  pointer-events: none;
 }
 
 /* DIALOG */
