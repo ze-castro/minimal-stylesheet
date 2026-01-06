@@ -4,21 +4,18 @@ A lightweight and modern CSS stylesheet designed to provide a simple, elegant, a
 
 ## Features
 
-- Clean and minimal design;
-- Responsive layout;
-- Predefined color variables;
-- Styled buttons, inputs, and typography;
-- Animated loading images;
-- Cookie consent banner;
-- Loading animation.
+- 8.21 KB CSS file;
+- Fast loading;
+- Clean design;
+- Color, shadows, fonts, sizes and other variables;
+- Styled buttons, inputs, and other elements;
 
 ## Getting Started
 
-To use the Minimal Stylesheet in your project, simply include the following `<link>` and `<script>` tag in the `<head>` section of your HTML file:
+To use the Minimal Stylesheet in your project, simply include the `<link>` tag in the `<head>` section of your HTML file:
 
 ```html
 <link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/ze-castro/minimal-stylesheet@main/defaults.css" />
-<script defer src="https://cdn.jsdelivr.net/gh/ze-castro/minimal-stylesheet@main/helper.js"></script>
 ```
 
 ## Usage
@@ -148,25 +145,6 @@ For variables, you can use the following CSS variables:
 --letter-spacing: 0.022em;
 ```
 
-For components, you can use the following HTML structure:
-
-### Loading
-
-```html
-<div class="loading">
-  <div></div>
-</div>
-```
-
-### Cookies
-
-```html
-<div class="cookies">
-  <p>We use cookies to improve your experience.</p>
-  <button>Accept</button>
-</div>
-```
-
 ## Customization
 
 Override the variables in your own stylesheet:
@@ -194,14 +172,8 @@ video {
 
 ## License
 
-This project is open-source and available under the MIT License.
-
-## Contributions
-
-Feel free to contribute by submitting a pull request or reporting issues.
+You can use this in your projects, either personal or commercial.
 
 ## Contact
 
 For any questions, reach out via GitHub Issues.
-
-Happy coding! 🚀

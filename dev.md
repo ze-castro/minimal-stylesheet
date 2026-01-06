@@ -10,3 +10,4 @@ https://purge.jsdelivr.net/gh/ze-castro/minimal-stylesheet@main/defaults.css
 https://purge.jsdelivr.net/gh/ze-castro/minimal-stylesheet@main/helper.js
 ```
 
+Do not refresh these links multiple times, they're rate limited.

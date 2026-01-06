@@ -11,15 +11,24 @@
   --black: #1d1d1f;
 
   /* COLORS */
-  --green: #288d52;
   --light-green: #3dbf6d;
+  --green: #288d52;
+  --dark-green: #095328;
+  --light-red: #f14e4e;
   --red: #be3939;
+  --dark-red: #8f1818;
+  --light-yellow: #fcd858;
   --yellow: #f5c518;
-  --orange: #e46248;
-  --blue: #0071e3;
+  --yellow: #c59b02;
+  --light-orange: #f8a35d;
+  --orange: #f77a15;
+  --dark-orange: #cc6007;
   --light-blue: #00a0e3;
+  --blue: #0071e3;
+  --dark-blue: #0b4279;
   --purple: #ac92ec;
   --pink: #f7a8b8;
+  --brown: #5c2900;
 
   /* TRANSPARENT COLORS */
   --transparent-blue: #0071e34b;
@@ -61,8 +70,8 @@
   --font-1: 'Poppins', sans-serif;
   --font-2: 'Montserrat', sans-serif;
   --font-3: 'Raleway', sans-serif;
-  --font-4: 'Playwrite BR', cursive;
-  --font-5: 'Courier New', monospace;
+  --font-hand: 'Playwrite BR', cursive;
+  --font-code: 'Courier New', monospace;
 
   /* FONT SIZES */
   --title-1: 2rem;
@@ -298,16 +307,6 @@ pre code {
 img {
   max-width: 100%;
   height: auto;
-  background: linear-gradient(90deg, #d0d0d0 0%, transparent 40%, transparent 60%, #d0d0d0 100%);
-  background-size: 200% 100%;
-  animation: img-loading 0.75s linear infinite;
-}
-@keyframes img-loading {
-  to { background-position: -200% 0; }
-}
-img.loaded {
-  animation: none;
-  background: none;
 }
 video {
   max-width: 100%;
@@ -410,76 +409,4 @@ progress::-webkit-progress-value {
     animation: none !important;
     transition: none !important;
   }
-}
-
-/* COOKIES */
-.cookies {
-  position: fixed;
-  bottom: 1.5rem;
-  left: 50%;
-  transform: translateX(-50%);
-  display: flex;
-  justify-content: space-between;
-  align-items: center;
-  gap: 1rem;
-  width: calc(100% - 2rem);
-  max-width: 600px;
-  height: auto;
-  padding: 1rem;
-  background-color: var(--white);
-  border-radius: var(--radius-3);
-  box-shadow: 0 0.5rem 1rem var(--shadow-2);
-  animation: cookiesOpen var(--steady) forwards;
-  z-index: 9999;
-}
-.cookies p {
-  font-size: var(--paragraph-2);
-  font-weight: var(--regular);
-}
-.cookies.close {
-  animation: cookiesClose var(--steady) forwards;
-}
-@keyframes cookiesOpen {
-  from {
-    transform: translateY(5rem) translateX(-50%);
-  }
-  to {
-    transform: translateY(0) translateX(-50%);
-  }
-}
-@keyframes cookiesClose {
-  from {
-    transform: translateY(0) translateX(-50%);
-  }
-  to {
-    transform: translateY(5rem) translateX(-50%);
-  }
-}
-
-/* LOADING */
-.loading {
-  position: absolute;
-  width: 100%;
-  height: 100%;
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  background-color: var(--transparent-background-4);
-  z-index: 9999;
-}
-@keyframes spin {
-  0% {
-    transform: rotate(0deg);
-  }
-  100% {
-    transform: rotate(360deg);
-  }
-}
-.loading div {
-  width: 2rem;
-  height: 2rem;
-  border-radius: 50%;
-  border: 0.2rem solid var(--transparent-gray-2);
-  border-top: 0.2rem solid var(--black);
-  animation: spin var(--loading) linear infinite;
 }
